@@ -85,8 +85,6 @@ app.get('/readings', (req, res) => {
 	});
 });
 
-app.get('/', (req, res) => res.send('IoT Server running'));
-
 app.listen(PORT, () => {
 	console.log(`Server listening on http://localhost:${PORT}`);
 	console.log(`Database file: ${DB_PATH}`);
